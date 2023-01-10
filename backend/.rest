@@ -1,0 +1,95 @@
+// Create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "sonydewataputra",
+    "email": "sonydewawtaputra@gmail.com",
+    "password": "123456",
+    "confpassword": "123456",
+    "role": "user"
+}
+
+// Get Users
+###
+GET http://localhost:5000/users
+
+// Get Users by Id
+###
+GET http://localhost:5000/users/280ebbf9-dfaf-4b40-bda3-af68d3cffa7f
+
+// Update User
+###
+PATCH http://localhost:5000/users/cf4adcf4-3520-4464-8bc9-310f037ec622
+Content-Type: application/json
+
+{
+    "name": "Sony Dewata Putra",
+    "email": "sonydewataputra@gmail.com",
+    "password": "123456",
+    "confpassword": "123456",
+    "role": "user"
+}
+
+// Delete User
+###
+DELETE http://localhost:5000/users/37b96cac-5ea2-4ead-9e63-7d4311719846
+
+// Login
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "sonydewataputra@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "hendryco@gmail.com",
+    "password": "123456"
+}
+
+// Me
+###
+GET http://localhost:5000/me
+
+// Logout
+###
+DELETE http://localhost:5000/logout
+
+// Get All Product
+###
+GET http://localhost:5000/products
+
+// Get Single Product
+###
+GET http://localhost:5000/products/009660c6-3e90-4c27-8744-073ba69d1904
+
+// POST Data Product
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 6",
+    "price": 9711
+}
+
+// Update Data Product
+###
+PATCH http://localhost:5000/products/009660c6-3e90-4c27-8744-073ba69d1904
+Content-Type: application/json
+
+{
+    "name": "Product 7",
+    "price": 9732
+}
+
+// Delete Product
+###
+DELETE http://localhost:5000/products/8e2f830c-bbdc-48e0-a82e-ba17060c22f1
